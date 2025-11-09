@@ -35,5 +35,21 @@ spec:
               secretKeyRef:
                 name: chatapp-secrets
                 key: MONGODB_URI
+          - name: CLOUDINARY_CLOUD_NAME
+            valueFrom:
+              secretKeyRef:
+                name: chatapp-secrets
+                key: CLOUDINARY_CLOUD_NAME
+          - name: CLOUDINARY_API_KEY
+            valueFrom:
+              secretKeyRef:
+                name: chatapp-secrets
+                key: CLOUDINARY_API_KEY
+          - name: CLOUDINARY_API_SECRET
+            valueFrom:
+              secretKeyRef:
+                name: chatapp-secrets
+                key: CLOUDINARY_API_SECRET
+
 
 
